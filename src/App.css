@@ -1,38 +1,209 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 100%;
+  background: #6610f2;
   color: white;
 }
+.navbar-header {
+  font-size: 2em;
+  margin-bottom: 2%;
+}
+.navbar {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 16% 7% 67% 10%;
+  margin-bottom: 10%;
+}
+.search {
+  display: inline;
+}
+.search-input {
+  padding-top: 3%;
+  padding-bottom: 2.8%;
+  padding-left: 5%;
+  padding-right: 40%;
+  border: 1px solid white;
+  border-radius: 10px 0px 0px 10px;
+  outline: none;
+}
+.search-btn {
+  padding-bottom: 2.8%;
+  padding-top: 2.8%;
+  padding-left: 3.2%;
+  padding-right: 3.2%;
+  border-radius: 0px 10px 10px 0px;
+  border: 1px solid rgb(221, 220, 220);
+  outline: none;
+  cursor: pointer;
+  background: rgb(221, 220, 220);
+}
+.react-icon {
+  font-size: 2.2em;
+  text-shadow: 1px 1px 1px solid white;
+  cursor: pointer;
+}
+.react-icon-home {
+  font-size: 2.2em;
+}
+.pagination {
+  margin-top: 12%;
+  margin-left: 13%;
+}
+.other-icons {
+  margin-top: 20%;
+  margin-left: 60%;
+  display: flex;
+}
+.repo-list {
+  display: grid;
+  grid-template-columns: 15% 80%;
+  margin-bottom: 3%;
+}
+.repo-dets {
+  display: grid;
+  grid-template-columns: 10% 10% 25% 50%;
+  justify-content: space-between;
+}
+.repo-info {
+  margin-left: 1%;
+}
+.repo-name {
+  font-size: 2em;
+}
+.repo-stars {
+  border: 1px solid white;
+  padding-left: 7%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.repo-issues {
+  border: 1px solid white;
+  padding-left: 7%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.repo-description {
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+img {
+  max-width: 150px;
+  max-height: 150px;
+  min-height: 120px;
+  background: #191970;
+  margin-left: 5%;
+}
+@media only screen and (max-width: 750px) and (min-width: 580px) {
+  .App {
+    font-size: 70%;
+  }
+  img {
+    max-width: 100px;
+    max-height: 80px;
+    min-height: 80px;
+    background: #191970;
+    margin-left: 5%;
+  }
+}
+@media only screen and (max-width: 575px) and (min-width: 385px) {
+  .App {
+    font-size: 75%;
+  }
+  img {
+    max-width: 100px;
+    max-height: 80px;
+    min-height: 80px;
+    background: #191970;
+    margin-left: 5%;
+  }
+  search {
+    display: inline;
+  }
+  .search-input {
+    padding-top: 3%;
+    padding-bottom: 2.8%;
+    padding-left: 5%;
+    padding-right: 18%;
+    border: 1px solid white;
+    border-radius: 10px 0px 0px 10px;
+    outline: none;
+  }
+  .search-btn {
+    padding-bottom: 2.8%;
+    padding-top: 2.8%;
+    padding-left: 3.2%;
+    padding-right: 3.2%;
+    border-radius: 0px 10px 10px 0px;
+    border: 1px solid rgb(221, 220, 220);
+    outline: none;
+    cursor: pointer;
+    background: rgb(221, 220, 220);
+  }
 
-.App-link {
-  color: #61dafb;
+  .repo-info {
+    margin-left: 3%;
+  }
+
+  .repo-list {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-bottom: 3%;
+  }
+  .repo-dets {
+    display: grid;
+    grid-template-columns: 18% 18% 27% 28%;
+    justify-content: space-between;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 385px) and (min-width: 200px) {
+  .App {
+    font-size: 75%;
   }
-  to {
-    transform: rotate(360deg);
+  img {
+    max-width: 100px;
+    max-height: 100px;
+    min-height: 100px;
+    background: #191970;
+    margin-left: 5%;
+  }
+  search {
+    display: inline;
+  }
+  .search-input {
+    padding-top: 3%;
+    padding-bottom: 2.8%;
+    padding-left: 2%;
+    padding-right: 1%;
+    border: 1px solid white;
+    border-radius: 10px 0px 0px 10px;
+    outline: none;
+  }
+  .search-btn {
+    padding-bottom: 2.8%;
+    padding-top: 2.8%;
+    padding-left: 2%;
+    padding-right: 3.2%;
+    border-radius: 0px 10px 10px 0px;
+    border: 1px solid rgb(221, 220, 220);
+    outline: none;
+    cursor: pointer;
+    background: rgb(221, 220, 220);
+  }
+
+  .repo-info {
+    margin-left: 3%;
+  }
+
+  .repo-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+  }
+  .repo-dets {
+    display: grid;
+    grid-template-columns: 22% 20% 27% 25%;
+    justify-content: space-between;
   }
 }
